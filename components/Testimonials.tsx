@@ -66,13 +66,13 @@ export default function Testimonials() {
   }
 
   return (
-    <section id="testimonials" className="py-24 bg-background">
+      <section id="testimonials" className="py-24 bg-[#0f172a]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-white">
             What Our Clients Say
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-slate-400 max-w-2xl mx-auto">
             Trusted by leading companies worldwide
           </p>
         </div>
@@ -87,20 +87,20 @@ export default function Testimonials() {
               >
                 {testimonials.map((testimonial) => (
                   <div key={testimonial.id} className="min-w-full px-4">
-                    <Card className="border-2">
+                    <Card className="border-2 bg-[#1e293b] border-slate-700/50 hover:border-primary/50 transition-all duration-300">
                       <CardContent className="pt-6">
                         <div className="flex items-start gap-4">
                           <Quote className="h-8 w-8 text-primary flex-shrink-0 mt-1" />
                           <div className="flex-grow">
-                            <p className="text-lg mb-6 text-foreground italic">
+                            <p className="text-lg mb-6 text-white italic">
                               "{testimonial.content}"
                             </p>
-                            <div className="border-t pt-4 flex items-center justify-between">
+                            <div className="border-t border-slate-700 pt-4 flex items-center justify-between">
                               <div>
-                                <p className="font-semibold text-foreground">
+                                <p className="font-semibold text-white">
                                   {testimonial.name}
                                 </p>
-                                <p className="text-sm text-muted-foreground">
+                                <p className="text-sm text-slate-400">
                                   {testimonial.role}, {testimonial.company}
                                 </p>
                               </div>
@@ -117,7 +117,7 @@ export default function Testimonials() {
                                     }}
                                   />
                                 ) : (
-                                  <span className="text-xs text-muted-foreground text-center px-2">
+                                  <span className="text-xs text-slate-400 text-center px-2">
                                     {testimonial.company.substring(0, 2).toUpperCase()}
                                   </span>
                                 )}
@@ -181,7 +181,7 @@ export default function Testimonials() {
                   className={`h-2 rounded-full transition-all ${
                     index === currentIndex
                       ? "w-8 bg-primary"
-                      : "w-2 bg-muted-foreground/30"
+                      : "w-2 bg-slate-600/30"
                   }`}
                   aria-label={`Go to testimonial ${index + 1}`}
                 />
@@ -193,18 +193,18 @@ export default function Testimonials() {
         {/* Mobile Stacked List */}
         <div className="md:hidden space-y-6">
           {testimonials.map((testimonial) => (
-            <Card key={testimonial.id} className="border-2">
+            <Card key={testimonial.id} className="border-2 bg-[#1e293b] border-slate-700/50 hover:border-primary/50 transition-all duration-300">
               <CardContent className="pt-6">
                 <Quote className="h-6 w-6 text-primary mb-4" />
-                <p className="text-sm mb-4 text-foreground italic">
+                <p className="text-sm mb-4 text-white italic">
                   "{testimonial.content}"
                 </p>
-                <div className="border-t pt-4 flex items-center justify-between">
+                <div className="border-t border-slate-700 pt-4 flex items-center justify-between">
                   <div>
-                    <p className="font-semibold text-sm text-foreground">
+                    <p className="font-semibold text-sm text-white">
                       {testimonial.name}
                     </p>
-                    <p className="text-xs text-muted-foreground">
+                    <p className="text-xs text-slate-400">
                       {testimonial.role}, {testimonial.company}
                     </p>
                   </div>
@@ -221,7 +221,7 @@ export default function Testimonials() {
                         }}
                       />
                     ) : (
-                      <span className="text-xs text-muted-foreground text-center px-2">
+                      <span className="text-xs text-slate-400 text-center px-2">
                         {testimonial.company.substring(0, 2).toUpperCase()}
                       </span>
                     )}

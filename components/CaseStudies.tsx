@@ -67,20 +67,20 @@ export default function CaseStudies() {
 
   return (
     <>
-      <section id="case-studies" className="py-24 bg-muted/50">
+      <section id="case-studies" className="py-24 bg-[#0f172a]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-white">
               Case Studies
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-xl text-slate-400 max-w-2xl mx-auto">
               Real results from real businesses we've transformed
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {caseStudies.map((study) => (
-              <Card key={study.id} className="flex flex-col hover:shadow-lg transition-shadow overflow-hidden">
+              <Card key={study.id} className="flex flex-col bg-[#1e293b] border border-slate-700/50 hover:border-primary/50 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1 transition-all duration-300 overflow-hidden">
                 {/* Thumbnail */}
                 <div className="relative h-48 bg-gradient-to-br from-primary/20 to-primary/5 overflow-hidden">
                   <img

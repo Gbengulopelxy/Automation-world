@@ -48,10 +48,10 @@ export default function HeroContent({
     if (onSecondaryCtaClick) {
       onSecondaryCtaClick()
     } else {
-      // Default behavior: scroll to pricing section
-      const pricingSection = document.getElementById("pricing")
-      if (pricingSection) {
-        pricingSection.scrollIntoView({ behavior: "smooth" })
+      // Default behavior: scroll to how it works section
+      const howItWorksSection = document.getElementById("how-it-works")
+      if (howItWorksSection) {
+        howItWorksSection.scrollIntoView({ behavior: "smooth" })
       }
     }
   }
@@ -82,9 +82,9 @@ export default function HeroContent({
           variant="outline"
           className="text-lg px-8 py-6 bg-white/10 hover:bg-white/20 text-white border-white/30 backdrop-blur-sm"
           onClick={handleSecondaryClick}
-          aria-label="View our pricing plans and packages"
+          aria-label="View how it works and get started"
         >
-          View pricing
+          How It Works
         </Button>
       </div>
     </div>

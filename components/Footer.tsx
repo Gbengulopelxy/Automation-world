@@ -58,6 +58,11 @@ export default function Footer() {
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-slate-300">
               <li>
+                <a href="#automation" className="hover:text-white transition-colors">
+                  Automation
+                </a>
+              </li>
+              <li>
                 <a href="#services" className="hover:text-white transition-colors">
                   Services
                 </a>
@@ -73,8 +78,8 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#pricing" className="hover:text-white transition-colors">
-                  Pricing
+                <a href="#how-it-works" className="hover:text-white transition-colors">
+                  How It Works
                 </a>
               </li>
               <li>

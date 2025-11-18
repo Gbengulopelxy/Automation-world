@@ -46,7 +46,7 @@ import Footer from "@/components/Footer"
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-[#0f172a]">
+    <main className="min-h-screen">
       {/* 
         HERO SECTION
         - Full-screen video background with overlay
@@ -91,10 +91,11 @@ export default function HomePage() {
       <Testimonials />
 
       {/* 
-        HOW IT WORKS SECTION
-        - Timeline-style layout with 4 steps
+        PRICING SECTION
+        - Responsive grid: 1 col mobile, 3 cols desktop
         - Uses semantic h2 heading
-        - Prominent CTA button to book strategy call
+        - 3 pricing tiers with expandable details
+        - "View Pricing Details" button toggles additional info
       */}
       <Pricing />
 
